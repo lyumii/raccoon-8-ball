@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Raccoon 8-ball</title>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="img/mysticalraccoon.png"
+        alt="mystical looking raccoon"
+      />Raccoon Fortune Teller
+    </h1>
+    <h2>
+      Should you do it? Most likely not, but ask the mystical raccoon anyway!
+    </h2>
+    <div id="imgdiv">
+      <div>
+        <label for="question-input"
+          >Spill the beans! <input type="text" name="" id="question-input"
+        /></label>
+        <div id="buttons">
+          <div>
+            <button type="button" id="get-answer">
+              <img src="img/fire.png" alt="raccoon on fire" />
+            </button>
+            <p id="get-answer-p"></p>
+          </div>
+          <div>
+            <button type="button" id="clear-question">
+              <img src="img/bin.png" alt="trash can" />
+            </button>
+            <p id="clear-question-p"></p>
+          </div>
+        </div>
+        <p id="hasspoken">
+          The trash can has spoken: <span id="answer"></span>
+        </p>
+      </div>
+      <div>
+        <img
+          id="trashcan"
+          src="img/rb_97722.png"
+          alt="cartoon raccoon in trashcan"
+        />
+      </div>
+    </div>
+  </body>
+</html>
