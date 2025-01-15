@@ -111,6 +111,13 @@ ul {
 #label {
   padding-top: 20px;
   padding-bottom: 10px;
+  width: 100%;
+}
+
+input {
+  width: 80%;
+  background-color: #2e2824;
+  border: 1px solid #d4c6a5;
 }
 
 ul li {
