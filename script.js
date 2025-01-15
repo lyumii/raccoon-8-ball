@@ -19,6 +19,16 @@ clearQuestion.addEventListener("click", function () {
 });
 
 getAnswer.addEventListener("click", function () {
+  eightBall();
+});
+
+questionInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    eightBall();
+  }
+});
+
+function eightBall() {
   let answer;
   if (questionInput.value === "") {
     return;
@@ -52,4 +62,4 @@ getAnswer.addEventListener("click", function () {
   }
   answerSpan.innerHTML = answer;
   getAnswer.disabled = true;
-});
+}
