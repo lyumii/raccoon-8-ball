@@ -54,6 +54,7 @@ span {
   font-weight: 600;
   font-size: 1.3em;
   display: block;
+  width: 95%;
 }
 
 button {
@@ -62,7 +63,7 @@ button {
 }
 
 #trashcan {
-  width: 200px;
+  width: 25vh;
   position: absolute;
   bottom: 0;
   right: 0;

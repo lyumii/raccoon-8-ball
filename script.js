@@ -15,9 +15,7 @@ const answer8 = "The answer is lost in the trash. Try again later.";
 const answeredQuestions = [];
 
 clearQuestion.addEventListener("click", function () {
-  answerSpan.innerHTML = "";
-  questionInput.value = "";
-  getAnswer.disabled = false;
+  clear();
 });
 
 getAnswer.addEventListener("click", function () {
@@ -27,6 +25,12 @@ getAnswer.addEventListener("click", function () {
 questionInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     eightBall();
+  }
+});
+
+questionInput.addEventListener("input", () => {
+  if (questionInput.value === "") {
+    clear();
   }
 });
 
@@ -78,4 +82,10 @@ function appendUl() {
     li.textContent = `You asked: "${answeredQuestions[i].question}" and the raccoon answered: "${answeredQuestions[i].answer}".`;
     questionsAndAnswers.appendChild(li);
   }
+}
+
+function clear() {
+  answerSpan.innerHTML = "";
+  questionInput.value = "";
+  getAnswer.disabled = false;
 }
