@@ -119,7 +119,8 @@ ul {
   width: 100%;
 }
 
-input {
+input,
+input:focus {
   width: 80%;
   background-color: #2e2824;
   border: 1px solid #d4c6a5;
