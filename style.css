@@ -118,9 +118,11 @@ input {
   width: 80%;
   background-color: #2e2824;
   border: 1px solid #d4c6a5;
+  color: #d4c6a5;
 }
 
 ul li {
   border: 1px #d4c6a5 solid;
   margin-bottom: 5px;
+  font-size: 16px;
 }
