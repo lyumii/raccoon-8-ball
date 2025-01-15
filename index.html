@@ -18,10 +18,12 @@
       Should you do it? Most likely not, but ask the mystical raccoon anyway!
     </h2>
     <div id="imgdiv">
-      <div>
-        <label for="question-input"
-          >Spill the beans! <input type="text" name="" id="question-input"
-        /></label>
+      <div id="everythingbutimg">
+        <div id="label">
+          <label for="question-input"
+            >Spill the beans! <input type="text" name="" id="question-input"
+          /></label>
+        </div>
         <div id="buttons">
           <div>
             <button type="button" id="get-answer">
@@ -36,11 +38,13 @@
             <p id="clear-question-p">Trash me!</p>
           </div>
         </div>
-        <p id="hasspoken">
-          The trash can has spoken: <span id="answer"></span>
-        </p>
-        <h3>Your previous readings:</h3>
-        <ul id="questions-and-answers"></ul>
+        <div id="hasspoken">
+          <p>The trash can has spoken: <span id="answer"></span></p>
+        </div>
+        <div id="list-section">
+          <h3>Your previous readings:</h3>
+          <ul id="questions-and-answers"></ul>
+        </div>
       </div>
       <div>
         <img
