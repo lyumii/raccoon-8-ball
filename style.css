@@ -31,7 +31,8 @@ h1 {
 h2,
 label,
 button,
-p {
+p,
+h3 {
   color: #d4c6a5;
   margin: 10px;
   padding-top: 20px;
@@ -76,4 +77,18 @@ button {
 
 #buttons {
   display: flex;
+}
+
+#get-answer-p,
+#clear-question-p {
+  margin-top: -2em;
+  font-size: 14px;
+  text-align: center;
+}
+
+ul {
+  color: #d4c6a5;
+  width: 70%;
+  padding: 20px;
+  line-height: 1.5em;
 }
