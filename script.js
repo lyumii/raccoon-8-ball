@@ -66,10 +66,28 @@ function eightBall() {
         break;
     }
   }
-  answerSpan.innerHTML = answer;
+
+  answerSpan.innerHTML = `<span id="span">Wait, the raccoon is munching... </span>`;
+
+  setTimeout(() => {
+    answerSpan.innerHTML = `<span id="span">Wait, the raccoon is munching... 3, </span>`;
+  }, 1000);
+
+  setTimeout(() => {
+    answerSpan.innerHTML = `<span id="span">Wait, the raccoon is munching... 3, 2,  </span>`;
+  }, 2000);
+
+  setTimeout(() => {
+    answerSpan.innerHTML = `<span id="span">Wait, the raccoon is munching... 3, 2, 1...</span>`;
+  }, 3000);
+
+  setTimeout(() => {
+    answerSpan.innerHTML = `<span id=span>${answer}</span>`;
+  }, 4000);
+
   answeredQuestions.push({
     question: questionInput.value,
-    answer: answerSpan.innerHTML,
+    answer: answer,
   });
   getAnswer.disabled = true;
   appendUl();

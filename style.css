@@ -46,11 +46,16 @@ h2 {
   justify-content: space-between;
 }
 
-span {
+#span {
   color: #be9865;
   font-weight: 600;
   font-size: 1.3em;
   display: block;
+  border: #be9865 3px solid;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px 2px #d4c6a5;
+  margin-top: 2vh;
+  padding: 2vh;
 }
 
 button {
