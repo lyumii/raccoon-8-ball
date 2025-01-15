@@ -90,7 +90,10 @@ function eightBall() {
     answer: answer,
   });
   getAnswer.disabled = true;
-  appendUl();
+
+  setTimeout(() => {
+    appendUl();
+  }, 4000);
 }
 
 function appendUl() {
